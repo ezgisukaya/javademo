@@ -8,8 +8,8 @@ public class Main {
         double tutar= input.nextDouble();
 
         /*
-        girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 ,
-        tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı
+        0<tutar<1000 ise KDV oranı %18 ,
+        tutar > 1000 TL ise KDV oranını %8 olarak KDV tutarı
          */
 
         double kdv= (tutar < 1000) ? 0.18 : 0.08;
