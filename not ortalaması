@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+int mat, fizik, kimya, muzik, turkce;
+
+//  we take it marks from users and we have to scanner
+     Scanner input = new Scanner(System.in);
+  System.out.println("fizik notunuz:");
+  fizik = input.nextInt();
+
+  System.out.println("mat notunuz:");
+  mat = input.nextInt();
+
+  System.out.println("kimya notunuz:");
+  kimya = input.nextInt();
+
+  System.out.println("muzik notunuz:");
+  muzik = input.nextInt();
+
+   System.out.println("turkce notunuz:");
+   turkce = input.nextInt();
+   int multi = mat+fizik+kimya+muzik+turkce;
+   double ort = multi/5.0 ;
+        System.out.println("ortalamanız:"+ort);
+        
+    }
+
+}
