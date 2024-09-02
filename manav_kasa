@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a,e ,d,m ,p;
+        double ucret;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("armut kac kilo ");
+        a = input.nextInt();
+
+        System.out.print("elma kac kilo ");
+        e = input.nextInt();
+
+        System.out.print("domates kac kilo ");
+        d = input.nextInt();
+
+        System.out.print("muz kac kilo ");
+        m = input.nextInt();
+
+        System.out.print("patlcan kac kilo ");
+        p = input.nextInt();
+
+        ucret = a*2.14 + e*3.67 + d*1.11+ m*0.95 + p*5;
+        System.out.println("odiceginiz ucret : " + ucret);
+
+    }
+}
