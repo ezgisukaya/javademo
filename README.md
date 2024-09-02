@@ -1,8 +1,4 @@
 // vucut kitle indeksi icin update
-
-
-
-
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -12,14 +8,10 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Boyunuzu girin (metre cinsinden, örn: 1,75): ");
         b = input.nextFloat();
-
         System.out.print("Kilonuzu girin: ");
         a = input.nextFloat();
-
         indeks = a / (b * b);
-
         System.out.println("Vücut kitle indeksiniz: " + indeks);
-
         // durum ve yorum
         if (indeks < 18.5) {
             System.out.println("durum : cok zayıfsın öl");
