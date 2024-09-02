@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a;
+        double pi = 3.14;
+        Scanner input = new Scanner(System.in);
+        System.out.print("yarıcap gir:  ");
+        a= input.nextInt();
+        double alan = pi * a * a;
+        System.out.println("dairenin alanı :" +alan);
+        double cevre = 2 * pi * a ;
+        System.out.println("dairenin cevresi:" +cevre);
+
+
+    }
+
+}
