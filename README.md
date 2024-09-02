@@ -1,13 +1,14 @@
 // vucut kitle indeksi icin update
-import java.util.Scanner;
 
+
+
+
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
         float a; // Kilo
         float b; // Boy
         double indeks;
-
         Scanner input = new Scanner(System.in);
         System.out.print("Boyunuzu girin (metre cinsinden, örn: 1,75): ");
         b = input.nextFloat();
