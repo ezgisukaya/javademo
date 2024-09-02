@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a;
+        Scanner input = new Scanner(System.in);
+        System.out.println("km gir ");
+        a= input.nextInt();
+        double ucret ;
+        ucret = 10+ a*2.20  ;
+
+
+        ucret = (ucret < 20 ) ?  20 : ucret ;
+        System.out.println("odiceginiz ucret:"+ ucret);
+
+    }
+
+}
