@@ -1,0 +1,110 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//BURÇ BULMA
+        int a;
+        String ay;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Doğduğunuz ay :");
+        ay = inp.nextLine();
+
+        System.out.println("Doğduğunuz günü giriniz :");
+        a = inp.nextInt();
+
+        switch(ay) {
+            case "ocak":
+                if(a<22){
+                    System.out.println("OĞLAK");
+            }else{
+                    System.out.println("KOVA");
+                }
+                break;
+            case "şubat":
+                if(a<19){
+                    System.out.println("KOVA");
+                }else{
+                    System.out.println("BALIK");
+                }
+                break;
+            case "mart":
+                if(a<20){
+                    System.out.println("BALIK");
+                }else{
+                    System.out.println("KOÇ");
+                }
+                break;
+            case "nisan":
+                if(a<21){
+                    System.out.println("KOÇ");
+                }else{
+                    System.out.println("BOĞA");
+                }
+                break;
+            case "mayıs":
+                if(a<21){
+                    System.out.println("BOĞA");
+                }else{
+                    System.out.println("İKİZLER");
+                }
+                break;
+            case "haziran":
+                if(a<22){
+                    System.out.println("İKİZLER");
+                }else{
+                    System.out.println("YENGEÇ");
+                }
+                break;
+            case "temmuz":
+                if(a<22){
+                    System.out.println("YENGEÇ");
+                }else{
+                    System.out.println("ASLAN");
+                }
+                break;
+            case "ağustos":
+                if(a<22){
+                    System.out.println("ASLAN");
+                }else{
+                    System.out.println("BAŞAK");
+                }
+                break;
+            case "eylul":
+                if(a<22){
+                    System.out.println("BAŞAK");
+                }else{
+                    System.out.println("TERAZİ");
+                }
+                break;
+            case "ekim":
+                if(a<22){
+                    System.out.println("TERAZİ");
+                }else{
+                    System.out.println("AKREP");
+                }
+                break;
+            case "kasım":
+                if(a<21){
+                    System.out.println("AKREP");
+                }else{
+                    System.out.println("YAY");
+                }
+                break;
+            case "aralık":
+                if(a<21){
+                    System.out.println("YAY");
+                }else{
+                    System.out.println("OĞLAK");
+                }
+                break;
+
+
+
+
+
+        }
+
+    }
+}
+
+
