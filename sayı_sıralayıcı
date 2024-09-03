@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//GİRİLEN SAYILARI KUCUKTEN BUYUGE SIRALAMA
+        int a,b,c ;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("1.sayı  giriniz :");
+        a = inp.nextInt();
+
+        System.out.println("2.sayı  giriniz :");
+        b = inp.nextInt();
+
+        System.out.println("2.sayı  giriniz :");
+        c = inp.nextInt();
+
+        if(a<b && a<c &&b<c ){
+            System.out.println("sayılar :"+a  +b  +c);
+        }else if(a<b && a<c &&c<b){
+            System.out.println("sayılar :"+a +c +b);
+        } else if(b<a && a<c ){
+            System.out.println("sayılar :"+b +a +c);
+        }else if(b<c && a>c ){
+            System.out.println("sayılar :"+b +c +a);
+        }else if(c<b && b<a){
+            System.out.println("sayılar :"+c +b +a);
+        }else if(c<a && a<b){
+            System.out.println("sayılar:"+c +a +b);
+        }
+
+    }
+}
+
+
