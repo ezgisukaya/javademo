@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//kullanıcı adıyla ve sifreyle giris yapan kisiye hatalı giris veya basarılı giris yazısı gelcek
+
+        int mat,fizik,kimya,turkce,muzik ;
+        double ort;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("mat notunuz: :");
+        mat = inp.nextInt();
+
+        System.out.println("fizik notunuz: :");
+        fizik = inp.nextInt();
+
+        System.out.println("kimya notunuz: :");
+        kimya = inp.nextInt();
+
+        System.out.println("turkce notunuz: :");
+        turkce = inp.nextInt();
+
+        System.out.println("muzik notunuz: :");
+        muzik= inp.nextInt();
+        ort = (mat+fizik+kimya+fizik+muzik)/5;
+        if(ort>50){
+            System.out.println("WELL DONE!");
+
+        }else{
+            System.out.println("FAIL");
+        }
+        System.out.println("Ortalamanız:" +ort);
+
+
+
+
+    }
+}
+
+
