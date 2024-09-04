@@ -1,0 +1,26 @@
+//kullanıcıdan dogru sifre girilene kadar tekrar denemesini iste
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       int password;
+       boolean passwordsucces =false;
+        Scanner input = new Scanner(System.in);
+
+
+while (!passwordsucces){
+    System.out.print("SİFRENİZİ GİRİN ");
+    password = input.nextInt();
+    if(password ==123){
+        System.out.println("BASARİLİ GİRİS");
+    }else{
+        System.out.println("sifre yanlis");
+    }
+}
+
+}
+}
+
+
+
+
+
