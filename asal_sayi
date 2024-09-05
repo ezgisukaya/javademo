@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+        // 1'den 7'ye kadar olan sayılar arasında asal olanları bul
+        for (int number = 1; number <= 100; number++) {
+            if (isPrime(number)) {
+                System.out.println(number + " asal bir sayıdır.");
+            }
+        }
+    }
+
+    // Asal sayı kontrolü yapan fonksiyon
+    public static boolean isPrime(int num) {
+        // 1 asal değildir
+        if (num < 2) {
+            return false;
+        }
+
+        // Sayıyı 2'den başlayarak num/2'ye kadar olan sayılara bölüp kontrol et
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false; // Eğer sayı bölünüyorsa asal değildir
+            }
+        }
+
+        return true; // Bölünmüyorsa asaldır
+    }
+}
