@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int a;
+        Scanner input = new Scanner(System.in);
+        System.out.print("bir sayı  gir: ");
+        a= input.nextInt();
+        if (isPalindrome(a)){
+            System.out.println(a +"Palindrom sayıdır +");
+
+        }else{
+            System.out.println(a + "palindrom değildir.");
+        }
+
+
+
+    }
+    public static boolean isPalindrome(int a){
+        int orjsayi= a;
+        int tershali=0;
+
+        while(a!=0){
+           int son_bas= a % 10 ;
+           tershali=tershali*10+son_bas;
+           a/=10;
+
+
+        }
+        return orjsayi== tershali;
+
+
+
+
+    }
+
+
+
+
+}
