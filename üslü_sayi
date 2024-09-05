@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int a,b;
+        int sonuc=1;
+        Scanner input = new Scanner(System.in);
+        System.out.println("bir sayı gir");
+            a = input.nextInt();
+        System.out.println("üs gir");
+        b = input.nextInt();
+        int i=1;
+        while(i<=b){
+            sonuc*=a;
+            i++;
+          //4^3= 4*4*4
+           //kac kez giriceksin 3 kez int a=3 olsun mesela
+
+            
+        }
+
+        
+        System.out.println("sonuc :" +sonuc);
+
+    }
+}
