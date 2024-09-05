@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Sayı Giriniz: ");
+        int a = input.nextInt();
+        double sonuc = 0;
+
+        for (int n = 1; n <= a; n++) {  // Döngü 1'den başlamalı
+            sonuc += (1.0 / n);  // Tam sayı yerine double bölme kullanıyoruz
+        }
+
+        System.out.println("Sonuç: " + sonuc);
+    }
+}
