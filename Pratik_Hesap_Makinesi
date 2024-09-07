@@ -1,0 +1,104 @@
+
+import java.util.Scanner;
+public class Main {
+
+
+    static int sum(int a,int b){
+        int result = a+b;
+        System.out.println("toplam: "+result);
+        return a+b;
+
+    }
+
+    static int minus(int a,int b){
+        int result =a-b;
+        System.out.println("cıkarma :"+result);
+        return a-b;
+    }
+    static int times(int a,int b){
+        int result =a*b;
+        System.out.println("carpım :"+result);
+        return a*b;
+    }
+    static int divided(int a,int b){
+        if(b==0){
+            return 0;
+        }
+        int result = a/b;
+        System.out.println("bolum: "+result);
+        return a/b;
+    }
+
+    static int power(int a,int b) {
+        int result = 1;
+        for (int i = 0; i <= b; i++) {
+            result *= a;
+        }
+        return result;
+    }
+
+
+
+
+    public static void main(String[] args) {
+        int select;
+        Scanner input = new Scanner(System.in);
+        System.out.println("*************-*****************");
+        System.out.print(" WELCOME! MENU: 1- Toplama İşlemi\n" +
+                "2- Çıkarma İşlemi\n" +
+                "3- Çarpma İşlemi\n" +
+                "4- Bölme işlemi\n" +
+                "5- Üslü Sayı Hesaplama\n" +
+                "6- Faktoriyel Hesaplama\n" +
+                "7- Mod Alma\n" +
+                "8- Dikdörtgen Alan ve Çevre Hesabı \n");
+        String menu = "1- Toplama İşlemi\n"
+                + "2- Çıkarma İşlemi\n"
+                + "3- Çarpma İşlemi\n"
+                + "4- Bölme işlemi\n"
+                + "5- Üslü Sayı Hesaplama\n"
+                + "6- Faktoriyel Hesaplama\n"
+                + "7- Mod Alma\n"
+                + "8- Dikdörtgen Alan ve Çevre Hesabı\n";
+        System.out.println("*************-*****************\n");
+
+       // select= input.nextInt();
+       while (true){
+           System.out.println("BİR İSLEM SEC");
+           select= input.nextInt();
+           if(select == 0){
+               System.out.println("HATA,BYY");
+               break;
+           }
+
+           System.out.println("Bi sayi gir ");
+           int a  =input.nextInt();
+           System.out.println("Bi sayi daha gir ");
+           int b = input.nextInt();
+           switch(select){
+               case 1:
+                   sum(a, b);
+                   break;
+               default:
+               case 2:
+                   minus(a, b);
+                   break;
+               case 3:
+                   times(a,b);
+                   break;
+               case 4:
+                  if (divided(a, b)==0){
+                      System.out.println("2.sayı 0 olamaz.");
+               }
+               case 5:
+                  System.out.println("üs sonucu :"+power(a,b));
+
+
+
+           }
+       }
+
+
+    }
+
+}
